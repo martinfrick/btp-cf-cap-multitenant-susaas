@@ -18,6 +18,3 @@ resources:
   - name: susaas-alert-notification
     parameters:
       service-plan: standard
-  - name: susaas-alert-notification
-    parameters:
-      service-plan: standard
