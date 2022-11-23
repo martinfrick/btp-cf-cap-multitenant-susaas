@@ -31,7 +31,7 @@ steps:
     cloudFoundry:
       credentialsId: "cf-credentials"
       apiEndpoint: "https://api.cf.eu10-004.hana.ondemand.com"
-      org: ":tfe-saas-dev-test"
+      org: "tfe-saas-dev-test"
       space: "dev"
     mtaDeployParameters: "-f --version-rule ALL"
     mtaExtensionCredentials: 
