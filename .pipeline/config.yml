@@ -28,13 +28,13 @@ steps:
     mtaBuildTool: "cloudMbt"
   
   cloudFoundryDeploy:
-    cfCredentialsId: "cf-credentials"
+    cfCredentialsId: cf-credentials
     apiEndpoint: "https://api.cf.eu10-004.hana.ondemand.com"
-    org: "tfe-saas-dev-test"
-    space: "dev"
+    org: tfe-saas-dev-test
+    space: dev
     mtaDeployParameters: "-f --version-rule ALL"
     mtaExtensionCredentials: 
-      susaas-sb-credentials: "susaas-sb-credentials"
+      susaas-sb-credentials: susaas-sb-credentials
     
 
 # tmsUpload:  # only relevant once you finish the SAP Cloud Transport Management Expert Scope chapter
