@@ -170,8 +170,10 @@ modules:
       memory: 64MB
       disk-quota: 265MB
     properties:
-      SBF_BROKER_CREDENTIALS_HASH: ${sbf_broker_credentials_hash}
-      
+      SBF_BROKER_CREDENTIALS_HASH:  >
+        {
+          "broker-user": "<paste your hash credentials here>"
+        }
     requires:
       - name: susaas-api-uaa
       - name: susaas-api-srv-api
