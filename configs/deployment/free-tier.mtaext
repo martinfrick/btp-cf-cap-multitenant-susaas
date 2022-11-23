@@ -8,5 +8,5 @@ modules:
     properties:
       SBF_BROKER_CREDENTIALS_HASH:  >
         {
-          "broker-user": "<paste your hash credentials here>"
+          "broker-user": "<%= susaas-sb-credentials %>"
         }
