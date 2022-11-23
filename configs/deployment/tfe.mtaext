@@ -3,14 +3,9 @@ _schema-version: 3.2.0
 version: 1.0.0
 extends: susaas
 
-modules:
-  - name: susaas-api-sb
-    properties:
-      SBF_BROKER_CREDENTIALS_HASH: >
-            {
-              "broker-user": "<%= susaas-sb-credentials %>"
-            }
-            
+parameters:
+  sbf_broker_credentials_hash : '<%= sbf_broker_credentials_hash %>'
+
 resources:
   - name: susaas-credstore
     parameters:
