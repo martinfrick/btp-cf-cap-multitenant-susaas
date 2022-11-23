@@ -4,7 +4,7 @@ version: 1.0.0
 extends: susaas
 
 parameters:
-  sbf_broker_credentials_hash : '<%= sbf_broker_credentials_hash %>'
+  sbf_broker_credentials_hash : <%= susaassbcredentials %>
 
 resources:
   - name: susaas-credstore

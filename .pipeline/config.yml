@@ -34,7 +34,7 @@ steps:
     space: dev
     mtaDeployParameters: "-f --version-rule ALL"
     mtaExtensionCredentials: 
-      sbf_broker_credentials_hash: "susaas-sb-credentials"
+      susaassbcredentials: susaassbcredentials
     
 
 # tmsUpload:  # only relevant once you finish the SAP Cloud Transport Management Expert Scope chapter
