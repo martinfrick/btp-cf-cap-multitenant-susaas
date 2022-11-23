@@ -6,11 +6,11 @@ extends: susaas
 modules:
   - name: susaas-api-sb
     properties:
-      SBF_BROKER_CREDENTIALS_HASH:  >
-        {
-          "broker-user": "<%= susaas-sb-credentials %>"
-        }
-
+      SBF_BROKER_CREDENTIALS_HASH: >
+            {
+              "broker-user": "<%= susaas-sb-credentials %>"
+            }
+            
 resources:
   - name: susaas-credstore
     parameters:
