@@ -24,7 +24,6 @@ steps:
 
   mtaBuild:
     buildTarget: "CF"
-    extensions: "./configs/deployment/tfe.mtaext"
     mtaBuildTool: "cloudMbt"
   
   cloudFoundryDeploy:
@@ -33,6 +32,7 @@ steps:
     org: tfe-saas-dev-test
     space: dev
     mtaDeployParameters: "-f --version-rule ALL"
+    mtaExtensionDescriptor: "./configs/deployment/tfe.mtaext"
     mtaExtensionCredentials: 
       susaassbcredentials: susaassbcredentials
     
