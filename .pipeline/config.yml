@@ -24,15 +24,14 @@ steps:
 
   mtaBuild:
     buildTarget: "CF"
-    extensions: "./configs/deployment/free-tier.mtaext"
+    extensions: "./configs/deployment/tfe.mtaext"
     mtaBuildTool: "cloudMbt"
   
   cloudFoundryDeploy:
-    cloudFoundry:
-      credentialsId: "cf-credentials"
-      apiEndpoint: "https://api.cf.eu10-004.hana.ondemand.com"
-      org: "tfe-saas-dev-test"
-      space: "dev"
+    credentialsId: "cf-credentials"
+    apiEndpoint: "https://api.cf.eu10-004.hana.ondemand.com"
+    org: "tfe-saas-dev-test"
+    space: "dev"
     mtaDeployParameters: "-f --version-rule ALL"
     mtaExtensionCredentials: 
       susaas-sb-credentials: "susaas-sb-credentials"
