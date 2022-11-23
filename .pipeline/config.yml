@@ -34,7 +34,7 @@ steps:
     mtaDeployParameters: "-f --version-rule ALL"
     mtaExtensionDescriptor: "./configs/deployment/tfe.mtaext"
     mtaExtensionCredentials: 
-      susaassbcredentials: susaassbcredentials
+      susaas-sb-credentials: susaa-sb-credentials
     
 
 # tmsUpload:  # only relevant once you finish the SAP Cloud Transport Management Expert Scope chapter
