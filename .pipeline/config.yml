@@ -1,11 +1,8 @@
 ---
 general:
-
-  pipeline: "sap-cloud-sdk"
-  buildTool: "mta"
+  buildTool: 'mta'
 
 stages:
-
   Build:
     mavenExecuteStaticCodeChecks: false
     npmExecuteLint: true
@@ -18,25 +15,22 @@ stages:
     cloudFoundryDeploy: true
 
 steps:
-
   npmExecuteLint:
     failOnError: true
 
   mtaBuild:
-    buildTarget: "CF"
-    mtaBuildTool: "cloudMbt"
-  
+    platform: 'CF'
+
   cloudFoundryDeploy:
     cfCredentialsId: cf-credentials
-    apiEndpoint: "https://api.cf.eu10-004.hana.ondemand.com"
+    apiEndpoint: 'https://api.cf.eu10-004.hana.ondemand.com'
     org: tfe-saas-dev-test
     space: dev
-    mtaDeployParameters: "-f --version-rule ALL"
-    mtaExtensionDescriptor: "./configs/deployment/tfe.mtaext"
+    mtaDeployParameters: '-f --version-rule ALL'
+    mtaExtensionDescriptor: './configs/deployment/tfe.mtaext'
     mtaExtensionCredentials: 
       susaas-sb-credentials: susaas-sb-credentials
-    
-
+      
 # tmsUpload:  # only relevant once you finish the SAP Cloud Transport Management Expert Scope chapter
 #   nodeName: 'QA'
 #   credentialsId: 'tms'
