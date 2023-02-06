@@ -16,7 +16,7 @@ Due to the technical and theoretical complexity of the topic, the sample applica
 
 Below you can find a solution architecture diagram of the sample application. As you can see, the app contains a lot of services and tools which you will use in this mission (click to enlarge).
 
-[<img src="./images/App_Architecture.png" width="600" />](./images/App_Architecture.png?raw=true)
+![<img src="./images/App_Architecture.png" width="600" />](./images/App_Architecture.png)
 
 
 ## Content
